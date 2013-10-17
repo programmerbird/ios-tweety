@@ -16,13 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Njd-y8-M9v">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Njd-y8-M9v">
                                 <rect key="frame" x="142" y="265" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="SQ7-WF-QSp"/>
+                                    <constraint firstAttribute="height" constant="37" id="Xhm-HF-DfX"/>
+                                </constraints>
                                 <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Njd-y8-M9v" secondAttribute="centerX" id="ACk-Du-px9"/>
+                            <constraint firstAttribute="centerY" secondItem="Njd-y8-M9v" secondAttribute="centerY" id="JxH-tK-Epw"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="bhO-RI-vqm" kind="modal" identifier="finishLoading" modalTransitionStyle="crossDissolve" id="cYU-gS-acH"/>
@@ -269,27 +277,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tweety" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLl-4x-wi4">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweety" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLl-4x-wi4">
                                 <rect key="frame" x="47" y="100" width="227" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="MlC-5r-wb0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="64"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="version 0.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxO-iE-nrd">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="version 0.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxO-iE-nrd">
                                 <rect key="frame" x="47" y="169" width="227" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="CVq-F0-r4x"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sittipon Simasanti" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZe-AB-Sbi">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sittipon Simasanti" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZe-AB-Sbi">
                                 <rect key="frame" x="47" y="293" width="227" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="fgB-3q-9jC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCF-E7-IL1">
-                                <rect key="frame" x="81" y="320" width="159" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCF-E7-IL1">
+                                <rect key="frame" x="81" y="327" width="159" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="c0b-Pd-cPb"/>
+                                </constraints>
                                 <state key="normal" title="@programmerbird">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -299,6 +319,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qCF-E7-IL1" firstAttribute="leading" secondItem="KZe-kv-7jr" secondAttribute="leading" constant="81" id="4yg-xl-46F"/>
+                            <constraint firstItem="MLl-4x-wi4" firstAttribute="leading" secondItem="KZe-kv-7jr" secondAttribute="leading" constant="47" id="Lt1-aU-oHm"/>
+                            <constraint firstItem="ZZe-AB-Sbi" firstAttribute="top" relation="lessThanOrEqual" secondItem="dxO-iE-nrd" secondAttribute="bottom" constant="73" id="NY9-wd-vUe"/>
+                            <constraint firstItem="dxO-iE-nrd" firstAttribute="top" secondItem="lBf-SS-aO5" secondAttribute="bottom" constant="105" id="P7b-Zt-Tw5"/>
+                            <constraint firstAttribute="trailing" secondItem="qCF-E7-IL1" secondAttribute="trailing" constant="80" id="Qbj-JR-Wzi"/>
+                            <constraint firstAttribute="trailing" secondItem="dxO-iE-nrd" secondAttribute="trailing" constant="46" id="Qi0-dA-Fl1"/>
+                            <constraint firstItem="dxO-iE-nrd" firstAttribute="leading" secondItem="KZe-kv-7jr" secondAttribute="leading" constant="47" id="VoU-wL-hsi"/>
+                            <constraint firstItem="qCF-E7-IL1" firstAttribute="top" secondItem="ZZe-AB-Sbi" secondAttribute="bottom" constant="6" id="YxV-1Y-khn"/>
+                            <constraint firstAttribute="trailing" secondItem="ZZe-AB-Sbi" secondAttribute="trailing" constant="46" id="aHQ-50-stM"/>
+                            <constraint firstItem="ZZe-AB-Sbi" firstAttribute="leading" secondItem="KZe-kv-7jr" secondAttribute="leading" constant="47" id="jpv-0X-iEd"/>
+                            <constraint firstAttribute="trailing" secondItem="MLl-4x-wi4" secondAttribute="trailing" constant="46" id="jzu-D2-wip"/>
+                            <constraint firstItem="7Zu-I4-PgU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZZe-AB-Sbi" secondAttribute="bottom" constant="60" id="oKI-mO-moP"/>
+                            <constraint firstItem="MLl-4x-wi4" firstAttribute="top" secondItem="lBf-SS-aO5" secondAttribute="bottom" constant="36" id="paB-jC-Gvj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="92z-dd-GkB"/>
                 </viewController>
